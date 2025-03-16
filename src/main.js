@@ -2,10 +2,13 @@ import iziToast from 'izitoast';
 import SimpleLightbox from 'simplelightbox';
 import { fetchPhotos } from './js/pixabay-api';
 import { createGalleryCard } from './js/render-functions';
-const form = document.querySelector('.search-form');
+
+const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
+
 const formSubbmit = event => {
   const loader = document.querySelector('.loader-container');
+
   loader.style.display = 'block';
   gallery.innerHTML = '';
   event.preventDefault();
