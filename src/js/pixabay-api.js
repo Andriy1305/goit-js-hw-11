@@ -1,3 +1,4 @@
+
 export const fetchPhotos = searchedQuery => {
   const params = new URLSearchParams({
     key: '48862284-111645087e0508ab98b21d672',
